@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rizwan Khan – Cinematic Editor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter :wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Profile Image Top Right -->
+  <a href="#" id="profile-link">
+    <img src="https://placehold.co/80x80 " alt="Profile" id="profile-img" />
+  </a>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video autoplay loop muted playsinline id="bg-video">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4 " type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>RIZWAN KHAN</h1>
+      <p>Editor for Hire – Motion with Emotion</p>
+      <button id="browse-btn">Browse My Reels</button>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="grid-container" id="grid-container">
+      <!-- Projects injected via JS -->
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <iframe id="modal-video" frameborder="0" allowfullscreen></iframe>
+      <h3 id="modal-title"></h3>
+      <p id="modal-tags"></p>
+      <p id="modal-description"></p>
+      <div id="modal-tools" class="tools-badges"></div>
+      <div id="modal-testimonial"></div>
+    </div>
+  </div>
+
+  <!-- My Process Section -->
+  <section class="process">
+    <h2>My Process</h2>
+    <div class="process-timeline">
+      <ul>
+        <li><span>1</span> Raw Footage</li>
+        <li><span>2</span> Rough Cut</li>
+        <li><span>3</span> Color Grading</li>
+        <li><span>4</span> Delivery</li>
+      </ul>
+      <div class="bts-video">
+        <iframe src="https://player.vimeo.com/video/769798709?h=3f4b207b24&badge=0&autopause=0&player_id=0&app_id=58479 " frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <select required>
+        <option value="">Select Project Type</option>
+        <option>Wedding</option>
+        <option>Documentary</option>
+        <option>Commercial</option>
+        <option>Social Media</option>
+      </select>
+      <input type="email" placeholder="Email Address" required />
+      <textarea rows="4" placeholder="Describe Your Footage" required></textarea>
+      <button type="submit">Send Inquiry</button>
+      <p id="form-status" class="status-message"></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Rizwan Khan | Cinematic Editor. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
